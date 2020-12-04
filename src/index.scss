@@ -1,0 +1,115 @@
+@font-face {
+  font-family: BentonSansRegular;
+  src: url("./fonts/BentonSansRegular.rest.woff2") format("woff2"),
+    url("./fonts/BentonSansRegular.rest.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "BentonSansRegular", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+#container {
+  background: #FCF5F3;
+  overflow-x: hidden;
+  position: relative;
+  min-width: 320px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 0;
+}
+
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 639.999px) and (min-width: 600px) {
+  .content-wrapper {
+    padding-left: 13.5%;
+    padding-right: 14%;
+  }
+}
+
+@media only screen and (max-width: 530.999px) {
+  .content-wrapper {
+    padding: 40px 23px 0 24px;
+  }
+}
+
+.row {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  // display: flex;
+  display: flow-root
+}
+
+.row .row {
+  max-width: none;
+}
+
+.column.row {
+  display: flow-root
+}
+
+.columns {
+  width: 100%;
+  min-height: 1px;
+  float: left;
+}
+
+.content-wrapper {
+  padding-left: 16.5%;
+  padding-right: 16%;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+.offer-detail {
+  margin-bottom: 20px;
+  padding-left: 35px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4gICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxjaXJjbGUgY3g9IjkiIGN5PSI5IiByPSI5IiBmaWxsPSIjNkE4RDAwIi8+ICAgICAgICA8cGF0aCBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNNC41IDkuNzM3bDIuNzUzIDIuNzUzTDEzLjc0MyA2Ii8+ICAgIDwvZz48L3N2Zz4=)
+    no-repeat top left;
+  color: #666666;
+  letter-spacing: 0.2px;
+  line-height: 1.13;
+}
+
+.rotate {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+.advertise span {
+  padding: 21px 0;
+  display: inline-block;
+  font-size: 15px;
+}
+.advertise {
+  border-radius: 50%;
+  position: absolute;
+  background: #aa1501;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  top: 25px;
+  right: 15px;
+  line-height: 1.22;
+  letter-spacing: -0.3px;
+  font-size: 18px;
+}
